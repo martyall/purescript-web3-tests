@@ -2,3 +2,6 @@
 build
 output
 node_modules
+.psc-ide-port
+.vscode/
+
