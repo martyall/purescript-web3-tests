@@ -32,5 +32,5 @@ jobs:
           docker run -d -p 8545:8545 -e ACCOUNTS_TO_CREATE=10 foamspace/cliquebait:v1.9.12
           sleep 10
           npm install
-          npm run build-chanterelle
+          npm run chanterelle-build
           npm run test
