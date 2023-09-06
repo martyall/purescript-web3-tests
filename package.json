@@ -4,7 +4,7 @@
     "postinstall": "spago install",
     "build": "spago build",
     "chanterelle-build": "chanterelle build",
-    "test": "spago test"
+    "test": "spago -x test.dhall test"
 
   },
   "dependencies": {
