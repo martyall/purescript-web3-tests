@@ -4,3 +4,6 @@
 [submodule "purescript-web3-generator"]
 	path = purescript-web3-generator
 	url = https://github.com/f-o-a-m/purescript-web3-generator
+[submodule "chanterelle"]
+	path = chanterelle
+	url = https://github.com/f-o-a-m/chanterelle
