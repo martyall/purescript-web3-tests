@@ -3,7 +3,7 @@
   "scripts": {
     "postinstall": "spago install",
     "build": "spago build",
-    "chanterelle-build": "chanterelle build"
+    "chanterelle-build": "chanterelle build",
     "test": "spago test"
 
   },
