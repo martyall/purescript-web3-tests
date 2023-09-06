@@ -24,14 +24,14 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          submodules: recursive
       
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Run the build process with Docker
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          docker run -d -p 8545:8545 -e ACCOUNTS_TO_CREATE=10 foamspace/cliquebait:v1.9.12
+          sleep 10
+          npm install
+          npm run build
+          npm run chanterelle-build
+          npm run test

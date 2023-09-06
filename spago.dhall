@@ -25,7 +25,8 @@
   , "transformers"
   , "tuples"
   , "web3"
+  , "chanterelle"
   ]
 , packages = ./packages.dhall
-, sources = [ "src/**/*.purs", "test/**/*.purs" ]
+, sources = [ "src/**/*.purs" ]
 }
