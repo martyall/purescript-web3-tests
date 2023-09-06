@@ -1,0 +1,4 @@
+.spago
+build
+output
+node_modules
