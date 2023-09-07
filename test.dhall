@@ -10,7 +10,6 @@
   , "either"
   , "eth-core"
   , "foldable-traversable"
-  , "identity"
   , "maybe"
   , "newtype"
   , "node-buffer"
@@ -20,12 +19,12 @@
   , "prelude"
   , "profunctor-lenses"
   , "quotient"
-  , "spec"
   , "tagged"
   , "transformers"
   , "tuples"
+  , "spec"
   , "web3"
   ]
 , packages = ./packages.dhall
-, sources = [ "src/**/*.purs", "test/**/*.purs" ]
+, sources = [ "src/Contract/**/*.purs", "test/**/*.purs" ]
 }

@@ -3,21 +3,23 @@
   "scripts": {
     "postinstall": "spago install",
     "build": "spago build",
-    "chanterelle-build": "chanterelle build",
-    "test": "spago -x test.dhall test"
-
+    "web3-generator": "spago run --node-args=\"--abis build --module Contract\"",
+    "test": "spago -x test.dhall test",
+    "tidy": "purs-tidy format-in-place \"src/**/*.purs\" \"test/**/*.purs\"",
+    "tidy-check": "purs-tidy check \"src/**/*.purs\" \"test/**/*.purs\""
   },
   "dependencies": {
-    "purescript": "^0.14.2",
+    "purescript": "^0.15.8",
     "purescript-psa": "^0.8.2",
+    "purs-tidy": "^0.10.0",
+    "spago": "^0.20.9",
     "bn.js": "^4.11.0",
     "ethjs-provider-http": "^0.1.6",
     "mkdirp": "^0.5.1",
     "keccak": "^1.0.2",
     "secp256k1": "^3.0.1",
     "rlp": "^2.0.0",
-    "solc": "^0.5",
-    "spago": "^0.20.3",
-    "chanterelle": "./chanterelle"
+    "purs-tidy": "^0.10.0",
+    "solc": "^0.5"
   }
 }
