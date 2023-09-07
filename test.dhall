@@ -27,5 +27,5 @@
   , "web3"
   ]
 , packages = ./packages.dhall
-, sources = [ "src/**/*.purs", "test/**/*.purs" ]
+, sources = [ "src/Contract/**/*.purs", "test/**/*.purs" ]
 }
