@@ -24,8 +24,7 @@
   , "tagged"
   , "transformers"
   , "tuples"
-  , "web3"
-  , "chanterelle"
+  , "web3-generator"
   ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs" ]
